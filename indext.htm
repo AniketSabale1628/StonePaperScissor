@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Seasor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body class="preload">
+<div class="wraper">
+    <div class="container">
+        <div class="label">
+            <img src="./images/logo.svg" alt="">
+        </div>
+
+        <div class="num">
+
+        <div class="number">
+            <div id="s">your score</div>
+            <div id="s1">0</div>
+        </div>
+        
+        <div class="number">
+            <div id="s">Computer score</div>
+            <div id="s2">0</div>
+        </div>
+        </div>  
+    </div>
+
+    <section class="game">
+        <button class="choice-btnp" id="v" data-choice="paper">
+            <div class="choice paper">
+                <img src="images/icon-paper.svg">
+            </div>
+        </button>
+
+        <button class="choice-btns" id="v" data-choice="scissors">
+            <div class="choice scissors" >
+                <img src="images/icon-scissors.svg">
+            </div>
+        </button>
+
+        <button class="choice-btnr" id="v" data-choice="rock">
+            <div class="choice rock">
+                <img src="images/icon-rock.svg">
+            </div>
+        </button>
+    </section>
+
+    <section class="results hidden">
+        <h2 class="result_heading">You Pick</h2>
+        <h2 class="result_heading">PC Pick</h2>
+
+        <div class="results_result"></div>
+        <div class="results_winner hidden">
+            <h3 class="result_text"></h3>
+            <h3 class="results_text_common hidden">AGAINST PC</h3>
+            <button class="play_again">play again</button>
+        </div>
+        <div class="results_result" ></div>
+    </section>
+
+
+   
+    <button class="rules-btn" tabindex="1">rules </button>
+
+    <button class="next_btn hidden">next</button>
+
+
+
+    <div class="model">
+        <div class="model_container">
+            <header class="model_header">
+                <button class="close_btn">
+                X                    <!-- <img src="images/icon-close.svg" class="fonts"> -->
+                </button>
+            </header>
+            <img src="images/Frame 4.png" class="rules-image">
+        </div>
+    </div>
+
+    
+
+</div>
+
+<section class="congrat hidden">
+    <div class="con">
+        
+        <div class="gh">
+        <img src="Group 5.png" id="j">
+        <img src="Vector.png" id="i">
+       </div>
+
+       <div class="hurray">
+       <h2 id="h1">HURRAY!!</h2>
+       <h5 id="h2">YOU WON THE GAME</h5>
+        </div>
+<div class="btn1">
+        <button class="h3 play_again play_again1">play again</button>
+    </div>
+    </div>
+</section>
+
+
+<script src="main.js"></script>
+</body>
+</html>
